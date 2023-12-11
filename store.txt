@@ -1,0 +1,14 @@
+                Button:
+                    text: ""
+                    on_press: gif.anim_delay = 0.10
+                    on_release:
+                        root.manager.current = 'canvas'
+                        #gif.anim_reset(True)
+                    Image:
+                        id: gif
+                        source: 'images/anim.zip'
+                        center: self.parent.center
+                        size: 50, 50
+                        allow_stretch: True
+                        anim_delay: -1
+                        anim_loop: 1
